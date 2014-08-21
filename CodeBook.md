@@ -65,15 +65,3 @@ The process is repeated for each column (561 times) and for each activity (6 tim
 
 The nested loop implemented generates the Variable and Activity directly from the "testdat" data set, and it will calculate the mean based on the activity.  Let's remember that the activity was already added to the "testdat" data frame and it will fall under the column name ActivityName.
 
-See a fragment of the data set:
-
-
-id|        variable   |        activity   |  mean    
---|-------------------|-------------------|----------
-1 | tBodyAcc-mean()-X |           WALKING |0.2763369 
-2 | tBodyAcc-mean()-X |  WALKING_UPSTAIRS |0.2622946 
-3 | tBodyAcc-mean()-X |WALKING_DOWNSTAIRS |0.2881372 
-4 | tBodyAcc-mean()-X |           SITTING |0.2730596 
-5 | tBodyAcc-mean()-X |          STANDING |0.2791535 
-6 | tBodyAcc-mean()-X |            LAYING |0.2686486 
-
