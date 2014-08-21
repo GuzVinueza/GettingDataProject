@@ -57,7 +57,7 @@ The dataset that comes as a result from the rbind process doesn´t have any desc
 Both the "testdat" and "meansddat" data sets were updated with this information.  
 
 
-- **5. Creates a second, independent tidy data set with the average of each variable for each activity and each.** subject.
+- **5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.**
 
 Finally, a new dataset called "secondset" is generated.  This dataset is required to have 3 columns: (1) variable, (2) activity, (3) mean.  This data frame is designed with these fields.
 
@@ -76,3 +76,4 @@ id|        variable   |        activity   |  mean
 4 | tBodyAcc-mean()-X |           SITTING |0.2730596 
 5 | tBodyAcc-mean()-X |          STANDING |0.2791535 
 6 | tBodyAcc-mean()-X |            LAYING |0.2686486 
+
