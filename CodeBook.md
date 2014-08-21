@@ -31,7 +31,7 @@ As explained above, 70% and 30% of the information were disaggregated in differe
 
 The rbind function was used to generate the variables and join them together.  Each file was read using the read.table function.  Total number of rows = 10299 (7352 [train] + 2947 [test])
 
-- ** 2. Extracts only the measurements on the mean and standard deviation for each measurement. **
+- **2. Extracts only the measurements on the mean and standard deviation for each measurement.**
 
 The testdat data set has 561 columns, and in order to get the mean and std. dev .for each column it was necessary to generate an internal structure with the same column set (meansddat), which initially copies the information from the first 2 columns, and during the process is automatically updated using the "mean" and "sd" function.
 
@@ -39,7 +39,7 @@ The loop generates a column count for each one of the 561 columns and two rows. 
 
 Variable used: "meansddat" 
 
-- ** 3. Uses descriptive activity names to name the activities in the data set. **
+- **3. Uses descriptive activity names to name the activities in the data set.**
 
 For this task I added two new columns to the testdat dataset:
 - Column #562 is the Activity Code, which comes from the testact data frame
@@ -50,14 +50,14 @@ The process runs for each row of the testdat data set and assigns these new colu
 The "testact_col" data frame is used to hold the activity_labels.txt file
 
 
-- ** 4. Appropriately labels the data set with descriptive variable names. **
+- **4. Appropriately labels the data set with descriptive variable names.**
 
 The dataset that comes as a result from the rbind process doesn´t have any descriptive variable name related.  That means it has names for each column like V1, V2, ...., V561.  This process uses the colnames command in order to get descriptive column names according to the "features.txt" file, which contains the 561 different names for the columns.  For the last two columns of the "testdat" data set the colnames function is used and the names assigned manually.
 
 Both the "testdat" and "meansddat" data sets were updated with this information.  
 
 
-- ** 5. Creates a second, independent tidy data set with the average of each variable for each activity and each.  ** subject.
+- **5. Creates a second, independent tidy data set with the average of each variable for each activity and each.** subject.
 
 Finally, a new dataset called "secondset" is generated.  This dataset is required to have 3 columns: (1) variable, (2) activity, (3) mean.  This data frame is designed with these fields.
 
