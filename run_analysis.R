@@ -41,6 +41,11 @@ for (j in 1:561)
   }
 }
 
+
+## Reference test: 
+head(meansddat)
+
+
 ## 3
 ## Adds 2 new columns to the testdat data set to save the activity and the activity name
 ## columns are #562 (Activity Code) and #563 Activity Name
@@ -55,6 +60,8 @@ for (i in 1:nrow(testact)) {
   testdat[i,563]<- subset(testact_col[2], testact_col==testact[i,1]  )  
 }
 
+## Reference test: 
+head(testdat)
 
 ## 4. 
 ## Puts descriptive names to activities in columns of the dataset
@@ -65,6 +72,10 @@ colnames(testdat)[562] <- "ActivityCode"
 colnames(testdat)[563] <- "ActivityName"
 
 colnames(meansddat) <- testcol$V2
+
+## Reference test: 
+head(testdat)
+head(meansddat)
 
 ## 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
 ## Generates "secondset" as the new data set
@@ -96,5 +107,6 @@ for (i in 1:561)
 
 }
 
+## Reference test: 
 head(secondset)
 
