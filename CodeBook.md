@@ -67,10 +67,11 @@ The nested loop implemented generates the Variable and Activity directly from th
 
 See a fragment of the data set:
 
-  |        variable   |        activity   |  mean
-1 | tBodyAcc-mean()-X |           WALKING |0.2763369
-2 | tBodyAcc-mean()-X |  WALKING_UPSTAIRS |0.2622946
-3 | tBodyAcc-mean()-X |WALKING_DOWNSTAIRS |0.2881372
-4 | tBodyAcc-mean()-X |           SITTING |0.2730596
-5 | tBodyAcc-mean()-X |          STANDING |0.2791535
-6 | tBodyAcc-mean()-X |            LAYING |0.2686486
+|  |        variable   |        activity   |  mean    |
+|--|-------------------|-------------------|----------|
+|1 | tBodyAcc-mean()-X |           WALKING |0.2763369 |
+|2 | tBodyAcc-mean()-X |  WALKING_UPSTAIRS |0.2622946 |
+|3 | tBodyAcc-mean()-X |WALKING_DOWNSTAIRS |0.2881372 |
+|4 | tBodyAcc-mean()-X |           SITTING |0.2730596 |
+|5 | tBodyAcc-mean()-X |          STANDING |0.2791535 |
+|6 | tBodyAcc-mean()-X |            LAYING |0.2686486 |
