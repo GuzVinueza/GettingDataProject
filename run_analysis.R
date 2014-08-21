@@ -1,6 +1,9 @@
 
+## Gustavo Vinueza - gvinueza@gmail.com - 2014.08.20
+
 ## Final Project - Getting and Cleaning Data
 ## Set Local folder to be used
+
 setwd("C:/Users/gustavo/_Coursera/GettingData/Project")
 
 ## 1. 
