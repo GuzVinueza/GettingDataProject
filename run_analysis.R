@@ -110,3 +110,5 @@ for (i in 1:561)
 ## Reference test: 
 head(secondset)
 
+## Generate data for submitting
+write.table(secondset, "step5.txt", row.name=FALSE)
